@@ -1,0 +1,9 @@
+#page_header {
+  border-top: 10px solid #343434;
+  border-bottom: 1px dotted #CCC;
+}
+
+#page_header h1 {
+  line-height: 28px;
+  margin: 12px 0 18px 0;
+}
