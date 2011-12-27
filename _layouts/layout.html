@@ -12,12 +12,25 @@
   <body>
     <header id="page_header">
       <div class="row">
+        <div class="span10">
+          <img class="float-left shadow" id="gravatar" src="http://gravatar.com/avatar/10831877bd394c902f1dda20524c86d6?s=75" />
+          <h1>
+            <small>Hi, my name is Mike</small><br />
+            But, you can call me <em>Swift</em>.
+          </h1>
+        </div>
+        <div class="span6">
+          <ul class="gallery small float-right">
+            <li><a href="http://www.linkedin.com/in/theycallmeswift" title="Connect with me on LinkedIn"><img src="/img/social_icons/32px/linkedin.png" class="small" /></a></li>
+            <li><a href="http://github.com/theycallmeswift" title="Follow me on Github"><img src="/img/social_icons/32px/github.png" class="small" /></a></li>
+            <li><a href="http://twitter.com/SwiftAlphaOne" title="Follow me on Twitter"><img src="/img/social_icons/32px/twitter-2.png" class="small" /></a></li>
+            <li><a href="http://stackoverflow.com/users/385913/mike-swift" title="Follow me on StackOverflow"><img src="/img/social_icons/32px/stackoverflow.png" class="small" /></a></li>
+            <li><a href="#rss_subscribe" title="Subscribe to my blog"><img src="/img/social_icons/32px/rss.png" class="small" /></a></li>
+          </ul>
       </div>
     </header>
     <div class="row">
-      <section>
-        {{ content }}
-      </section>
+      {{ content }}
     </div>
   </body>
 </html>
