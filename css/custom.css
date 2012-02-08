@@ -14,8 +14,12 @@ body {
 }
 
 #page_header {
-  border-top: 10px solid #343434;
+  border-top: 10px solid #8AA696;
   border-bottom: 1px dotted #CCC;
+}
+
+.box.solid {
+  background-color: #EDEBE6;
 }
 
 .gravatar {
@@ -42,3 +46,47 @@ body {
   padding-top: 42px;
 }
 
+.post {
+  position: relative;
+}
+
+.post .date {
+  color: #8AA696;
+  display: block;
+  height: 39px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  width: 85px;
+}
+
+.post .date em {
+  display: none;
+}
+
+.post .date .day {
+  bottom: 0;
+  font-size: 40px;
+  font-weight: bold;
+  left: 0;
+  line-height: 40px;
+  position: absolute;
+}
+
+.post .date .month {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.post .date .year {
+  bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  position: absolute;
+  right: 0;
+}

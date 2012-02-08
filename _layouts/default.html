@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} :: They Call Me Swift</title>
-    <meta name="author" content="Mike Swift" />
+    <meta name="author" content="{{ site.author.name }}" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|La+Belle+Aurore|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/rawr/rawr.min.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -16,16 +16,16 @@
         <nav class="span11">
           <ul class="gallery float-right">
             <li>
-              <a class="selected pill" href="/">Blog</a>
+              <a class="{% if page.title == 'Home' %} selected {% endif %} pill" href="/">Blog</a>
             </li>
             <li>
-              <a class="pill" href="/projects">Projects</a>
+              <a class="{% if page.title == 'Projects' %} selected {% endif %} pill" href="/projects">Projects</a>
             </li>
             <li>
-              <a class="pill" href="#about">About</a>
+              <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
             </li>
             <li>
-              <a class="pill" href="/contact">Contact</a>
+              <a class="{% if page.title == 'Contact' %} selected {% endif %} pill" href="/contact">Contact</a>
             </li>
           </ul>
         </nav>
