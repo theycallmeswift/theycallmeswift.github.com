@@ -1,25 +1,29 @@
-body {
-  /* background-color: #EDEBE6; */
+html, body {
+  height: 100%;
 }
 
-.multicolumn {
-  -moz-column-count: 2;
-  -moz-column-gap: 1em;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 1em;
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -15em;
 }
 
-.multicolumn p {
-  margin-top: 0px;
+.push {
+  height: 15em;
 }
 
 #page_header {
-  border-top: 10px solid #8AA696;
+  border-top: 10px solid #343434;
   border-bottom: 1px dotted #CCC;
 }
 
 .box.solid {
-  background-color: #EDEBE6;
+  background-color: #EDEEE9;
+}
+
+.pill:link.selected, .pill:visited.selected {
+  background-color: ##343434;
 }
 
 .gravatar {
@@ -46,16 +50,41 @@ body {
   padding-top: 42px;
 }
 
+#page_footer {
+  background-color: #343434;
+}
+
+#page_footer h5 {
+  color: #EDEEE9;
+}
+
+#page_footer li a, #page_footer li a:visited {
+  color: #769039;
+}
+
+#page_footer li a:hover {
+  color: #EDEEE9;
+}
+
 .post {
   position: relative;
 }
 
+.post h3 a, .post h3 a:visited {
+  color: #343434;
+  text-decoration: none;
+}
+
+.post h3 a:hover {
+  text-decoration: underline;
+}
+
 .post .date {
-  color: #8AA696;
+  color: #769039;
   display: block;
   height: 39px;
   position: absolute;
-  right: 20px;
+  right: 24px;
   top: 16px;
   width: 85px;
 }

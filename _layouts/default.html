@@ -10,29 +10,55 @@
     <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
-    <header id="page_header">
-      <div class="row">
-        <h1 class="span5">They call me Swift.</h1>
-        <nav class="span11">
-          <ul class="gallery float-right">
-            <li>
-              <a class="{% if page.title == 'Home' %} selected {% endif %} pill" href="/">Blog</a>
-            </li>
-            <li>
-              <a class="{% if page.title == 'Projects' %} selected {% endif %} pill" href="/projects">Projects</a>
-            </li>
-            <li>
-              <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
-            </li>
-            <li>
-              <a class="{% if page.title == 'Contact' %} selected {% endif %} pill" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="wrapper">
+      <header id="page_header">
+        <div class="row">
+          <h1 class="span5">They call me Swift.</h1>
+          <nav class="span11">
+            <ul class="gallery float-right">
+              <li>
+                <a class="{% if page.title == 'Home' %} selected {% endif %} pill" href="/">Blog</a>
+              </li>
+              <li>
+                <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
+              </li>
+              <li>
+                <a class="{% if page.title == 'Contact' %} selected {% endif %} pill" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="main">
+        {{ content }}
       </div>
-    </header>
-    <div id="main">
-      {{ content }}
+      <div class="push"></div>
     </div>
+    <footer id="page_footer">
+      <div class="row">
+        <div class="span4">
+          <h5>Get Social.</h5>
+          <ul class="unstyled">
+            <li><a href="http://hackerleague.org/hackers/swift" title="My HackerLeague Profile">Hacker Profile</a></li>
+            <li><a href="http://www.github.com/theycallmeswift/" title="Swift's Github">Github</a></li>
+            <li><a href="http://stackoverflow.com/users/385913/mike-swift" title="Stack Overflow Profile">StackOverflow</a></li>
+            <li><a href="http://twitter.com/swiftalphaone" title="Follow me on Twitter">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="span4">
+          <h5>Build stuff.</h5>
+          <ul class="unstyled">
+            <li><a href="http://www.crowdtap.com/" title="Crowdtap">Crowdtap</a></li>
+            <li><a href="http://www.hackerleague.org/" title="We Power Hackathons">Hacker League</a></li>
+            <li><a href="http://www.commentaddict.com/" title="CommentAddict">Comment Addict</a></li>
+          </ul>
+        </div>
+
+        <div class="span8 align-right">
+          <h5>2012 &copy; Mike Swift.</h5>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
