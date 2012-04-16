@@ -3,6 +3,10 @@
 Rawr is a framework to create good looking websites quickly. Rawr uses the power of standardized margins to create a consistent and pixel perfect look.
 
 ---
+  
+You can find the design documentation at [the official website](http://getrawr.com/).
+
+---
 
 To use rawr, just import the less document:
 
@@ -31,7 +35,6 @@ index.html would look like this:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>rawr!</title>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-            <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,700italic' rel='stylesheet' type='text/css'>
             <script type="text/javascript">
                 less = { env: 'development' };
             </script>
@@ -52,5 +55,3 @@ and my-project.less would look like:
     }
 
 You can now access all the variables and standarized margins provided by rawr in your less document.
-  
-You can find the design documentation at [the official website](http://getrawr.com/).

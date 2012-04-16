@@ -2,7 +2,7 @@
  * Rawwr! v0.0.1
  *
  * Copyright 2011 Ian Jennings
- * Date: Sun, 12 Feb 2012 22:58:07 GMT
+ * Date: Mon, 16 Apr 2012 02:07:30 GMT
  */
 /*
   rawr design framework
@@ -33,9 +33,7 @@ section {
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -106,8 +104,7 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-a:hover,
-a:active {
+a:hover, a:active {
   outline: 0;
 }
 /* =============================================================================
@@ -128,8 +125,7 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-b,
-strong {
+b, strong {
   font-weight: bold;
 }
 blockquote {
@@ -177,8 +173,7 @@ q {
   quotes: none;
 }
 /* 2 */
-q:before,
-q:after {
+q:before, q:after {
   content: '';
   content: none;
 }
@@ -189,8 +184,7 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -205,16 +199,14 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-ul,
-ol {
+ul, ol {
   margin-left: 0;
   padding: 0 0 0 40px;
 }
 dd {
   margin: 0 0 0 40px;
 }
-nav ul,
-nav ol {
+nav ul, nav ol {
   list-style: none;
   list-style-image: none;
 }
@@ -303,8 +295,7 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-button,
-input {
+button, input {
   line-height: normal;
   /* 1 */
 
@@ -333,8 +324,7 @@ input[type="submit"] {
  * 1. Addresses box sizing set to content-box in IE8/9
  * 2. Removes excess padding in IE8/9
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
 
@@ -366,8 +356,7 @@ input[type="search"]::-webkit-search-decoration {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -422,16 +411,16 @@ table {
 /* Link Variables */
 /* Font Variables */
 .heading-font {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 .ui-font {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 .reading-font {
-  font-family: 'Droid Serif', serif;
+  font-family: Georgia, serif;
 }
 .mono-font {
-  font-family: 'Droid Sans Mono', sans-serif;
+  font-family: 'Lucida Console', Monaco, monospace;
 }
 /* 
   Grid Variables 
@@ -834,8 +823,7 @@ table {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.left-right:before,
-.left-right:after {
+.left-right:before, .left-right:after {
   display: table;
   content: "";
   zoom: 1;
@@ -844,15 +832,13 @@ table {
 .left-right:after {
   clear: both;
 }
-.left-right .left,
-.left-right .right {
+.left-right .left, .left-right .right {
   width: 50%;
   float: none;
   vertical-align: middle;
   display: table-cell;
 }
-.left-right .left.align-top,
-.left-right .right.align-top {
+.left-right .left.align-top, .left-right .right.align-top {
   vertical-align: top;
 }
 .left-right .right {
@@ -879,7 +865,7 @@ table {
   padding: 0px;
 }
 body {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   vertical-align: middle;
   color: #222323;
   font-size: 12px;
@@ -911,17 +897,15 @@ dt {
 p {
   margin-top: 24px;
   margin-bottom: 24px;
-  font-family: 'Droid Serif', serif;
+  font-family: Georgia, serif;
   text-shadow: none;
 }
-ol,
-ul {
+ol, ul {
   margin-top: 24px;
   margin-bottom: 24px;
   padding-left: 24px;
 }
-ol.unstyled li,
-ul.unstyled li {
+ol.unstyled li, ul.unstyled li {
   padding: 0px;
 }
 ol ul,
@@ -931,18 +915,15 @@ ul ol {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-ol.spaced.small,
-ul.spaced.small {
+ol.spaced.small, ul.spaced.small {
   margin-top: 12px;
   margin-bottom: 12px;
 }
-ol.spaced li,
-ul.spaced li {
+ol.spaced li, ul.spaced li {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-ol.spaced.large,
-ul.spaced.large {
+ol.spaced.large, ul.spaced.large {
   margin-top: 48px;
   margin-bottom: 48px;
 }
@@ -950,7 +931,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'Droid Sans Mono', sans-serif;
+  font-family: 'Lucida Console', Monaco, monospace;
 }
 code.prettyprint {
   max-height: 400px;
@@ -958,9 +939,8 @@ code.prettyprint {
   overflow-x: visible;
   display: block;
 }
-code.prettyprint,
-pre.prettyprint {
-  font-family: 'Droid Sans Mono', sans-serif;
+code.prettyprint, pre.prettyprint {
+  font-family: 'Lucida Console', Monaco, monospace;
 }
 pre {
   margin-top: 24px;
@@ -979,7 +959,7 @@ h6 {
   margin-top: 24px;
   margin-bottom: 24px;
   font-weight: bold;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   color: #545757;
 }
 h1 a,
@@ -1023,7 +1003,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #343434;
+  color: #1d242a;
 }
 small {
   font-size: 12px;
@@ -1091,13 +1071,11 @@ a:hover {
   color: #0a232a;
   text-decoration: none;
 }
-section,
-article {
+section, article {
   margin-top: 48px;
   margin-bottom: 48px;
 }
-sup,
-sub {
+sup, sub {
   height: 0px;
   line-height: 1em;
   vertical-align: baseline;
@@ -1149,19 +1127,16 @@ table {
   border: 1px solid #e1e1e1;
   margin-bottom: 24px;
 }
-table thead,
-table tfoot {
+table thead, table tfoot {
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
   background-color: #e1e1e1;
   font-weight: bold;
 }
-table thead th,
-table tfoot th {
+table thead th, table tfoot th {
   border-right: 1px solid #e1e1e1;
 }
-table th,
-table td {
+table th, table td {
   padding: 6px 24px;
 }
 blockquote {
@@ -1189,9 +1164,7 @@ img {
   display: block;
 }
 /* Forms */
-input,
-select,
-textarea {
+input, select, textarea {
   outline: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1215,15 +1188,11 @@ select[type="password"],
 textarea[type="password"] {
   cursor: text;
 }
-input:hover,
-select:hover,
-textarea:hover {
+input:hover, select:hover, textarea:hover {
   background-color: #fdfdfd;
   border: 1px solid #c8c8c8;
 }
-input:focus,
-select:focus,
-textarea:focus {
+input:focus, select:focus, textarea:focus {
   background-color: #ffffff;
   border: 1px solid #949494;
   -webkit-box-shadow: 0px 0px 2px rgba(255,255,255, .9);
@@ -1261,7 +1230,7 @@ input[type="button"] {
   display: inline-block;
   margin-top: 24px;
   margin-bottom: 24px;
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 button:hover,
 input[type="submit"]:hover,
@@ -1481,8 +1450,7 @@ input[type="button"].inline {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-input[type="submit"],
-button[type="submit"] {
+input[type="submit"], button[type="submit"] {
   background: #4e8c23;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #65b52d), color-stop(1, #8cd659));
   background: -ms-linear-gradient(bottom, #65b52d, #8cd659);
@@ -1498,8 +1466,7 @@ button[type="submit"] {
   -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
 }
-input[type="submit"]:hover,
-button[type="submit"]:hover {
+input[type="submit"]:hover, button[type="submit"]:hover {
   color: #ffffff;
   background: #4e8c23;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #65b52d), color-stop(1, #a8e082));
@@ -1510,8 +1477,7 @@ button[type="submit"]:hover {
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 2px rgba(0,0,0,0.3);
   border: 1px solid #579c27;
 }
-input[type="submit"]:active,
-button[type="submit"]:active {
+input[type="submit"]:active, button[type="submit"]:active {
   background: #305716;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #376319), color-stop(1, #67b92e));
   background: -ms-linear-gradient(bottom, #376319, #67b92e);
@@ -1521,8 +1487,7 @@ button[type="submit"]:active {
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.0), 0px 1px 0px rgba(0,0,0,0);
   border: 1px solid #2c4f14;
 }
-input[type="reset"],
-button[type="reset"] {
+input[type="reset"], button[type="reset"] {
   background: #e02a11;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f04b34), color-stop(1, #f58a7b));
   background: -ms-linear-gradient(bottom, #f04b34, #f58a7b);
@@ -1538,8 +1503,7 @@ button[type="reset"] {
   -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
 }
-input[type="reset"]:hover,
-button[type="reset"]:hover {
+input[type="reset"]:hover, button[type="reset"]:hover {
   color: #ffffff;
   background: #e02a11;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f04b34), color-stop(1, #f9b4ab));
@@ -1550,8 +1514,7 @@ button[type="reset"]:hover {
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 2px rgba(0,0,0,0.3);
   border: 1px solid #ed3218;
 }
-input[type="reset"]:active,
-button[type="reset"]:active {
+input[type="reset"]:active, button[type="reset"]:active {
   background: #a21e0c;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b1210d), color-stop(1, #f04f39));
   background: -ms-linear-gradient(bottom, #b1210d, #f04f39);
@@ -1561,8 +1524,7 @@ button[type="reset"]:active {
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.0), 0px 1px 0px rgba(0,0,0,0);
   border: 1px solid #991d0c;
 }
-input[type="button"],
-button {
+input[type="button"], button {
   background: #555555;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6f6f6f), color-stop(1, #959595));
   background: -ms-linear-gradient(bottom, #6f6f6f, #959595);
@@ -1578,8 +1540,7 @@ button {
   -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
 }
-input[type="button"]:hover,
-button:hover {
+input[type="button"]:hover, button:hover {
   color: #ffffff;
   background: #555555;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6f6f6f), color-stop(1, #aeaeae));
@@ -1590,8 +1551,7 @@ button:hover {
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0px 1px 2px rgba(0,0,0,0.3);
   border: 1px solid #5f5f5f;
 }
-input[type="button"]:active,
-button:active {
+input[type="button"]:active, button:active {
   background: #343434;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3b3b3b), color-stop(1, #717171));
   background: -ms-linear-gradient(bottom, #3b3b3b, #717171);
@@ -1601,17 +1561,14 @@ button:active {
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.0), 0px 1px 0px rgba(0,0,0,0);
   border: 1px solid #2f2f2f;
 }
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   display: inline-block;
 }
-abbr[title],
-dfn[title] {
+abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
-figcaption,
-caption {
+figcaption, caption {
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -1766,7 +1723,7 @@ a:hover .media {
   display: inline-block;
   margin-top: 24px;
   margin-bottom: 24px;
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 .button:hover {
   color: #ffffff;
@@ -1942,8 +1899,7 @@ a:hover .media {
   margin-bottom: 0px;
 }
 /* Pills */
-.pill:link,
-.pill:visited {
+.pill:link, .pill:visited {
   display: inline-block;
   padding: 3px 12px;
   -webkit-border-radius: 3px;
@@ -1954,25 +1910,23 @@ a:hover .media {
   background-clip: padding-box;
   text-shadow: none;
   text-decoration: none;
-  color: #343434;
+  color: #1d242a;
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.pill:link.selected,
-.pill:visited.selected {
+.pill:link.selected, .pill:visited.selected {
   color: #ffffff;
-  background-color: #343434;
+  background-color: #1d242a;
 }
 .pill:hover {
   color: #ffffff;
-  background-color: #343434;
+  background-color: #1d242a;
 }
 .pill.inline {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-ul.gallery,
-ol.gallery {
+ul.gallery, ol.gallery {
   padding-left: 0px;
   list-style-type: none;
   margin: 0px;
@@ -1995,12 +1949,10 @@ ol.gallery:after {
   zoom: 1;
   *display: inline;
 }
-ul.gallery:after,
-ol.gallery:after {
+ul.gallery:after, ol.gallery:after {
   clear: both;
 }
-ul.gallery li,
-ol.gallery li {
+ul.gallery li, ol.gallery li {
   float: left;
   margin-top: -24px;
   margin-left: 24px;
@@ -2008,41 +1960,34 @@ ol.gallery li {
   padding: 0px;
   display: block;
 }
-ul.gallery.inline,
-ol.gallery.inline {
+ul.gallery.inline, ol.gallery.inline {
   margin-top: -48px;
   margin-bottom: -24px;
 }
-ul.gallery.small,
-ol.gallery.small {
+ul.gallery.small, ol.gallery.small {
   margin-top: -12px;
   margin-left: -12px;
   padding-top: 24px;
 }
-ul.gallery.small li,
-ol.gallery.small li {
+ul.gallery.small li, ol.gallery.small li {
   margin-top: -12px;
   margin-left: 12px;
 }
-ul.gallery.small.inline,
-ol.gallery.small.inline {
+ul.gallery.small.inline, ol.gallery.small.inline {
   margin-top: -24px;
   margin-bottom: -12px;
 }
-ul.gallery.large,
-ol.gallery.large {
+ul.gallery.large, ol.gallery.large {
   margin-top: -48px;
   margin-left: -48px;
   padding-top: 96px;
   margin-bottom: -48px;
 }
-ul.gallery.large li,
-ol.gallery.large li {
+ul.gallery.large li, ol.gallery.large li {
   margin-top: -48px;
   margin-left: 48px;
 }
-ul.gallery.large.inline,
-ol.gallery.large.inline {
+ul.gallery.large.inline, ol.gallery.large.inline {
   margin-top: -96px;
   margin-bottom: -48px;
 }
@@ -2053,8 +1998,7 @@ ol.gallery.large.inline {
   padding-right: 24px;
   zoom: 1;
 }
-.box:before,
-.box:after {
+.box:before, .box:after {
   display: table;
   content: "";
   zoom: 1;
@@ -2119,8 +2063,7 @@ code {
   -moz-box-shadow: 0px 1px 2px rgba(0,0,0,.08) inset, 0px -1px 2px rgba(255,255,255, .8), 0px 1px 2px rgba(255,255,255, .8);
   box-shadow: 0px 1px 2px rgba(0,0,0,.08) inset, 0px -1px 2px rgba(255,255,255, .8), 0px 1px 2px rgba(255,255,255, .8);
 }
-code:before,
-code:after {
+code:before, code:after {
   display: table;
   content: "";
   zoom: 1;

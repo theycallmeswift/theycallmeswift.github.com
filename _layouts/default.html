@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} :: They Call Me Swift</title>
     <meta name="author" content="{{ site.author.name }}" />
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|La+Belle+Aurore|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/rawr/rawr.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/rawr/rawr.min.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+    <link rel="stylesheet" href="/css/custom.css">
   </head>
   <body>
     <div class="wrapper">
       <header id="page_header">
         <div class="row">
-          <h1 class="span5">They call me Swift.</h1>
+          <h1 class="span5"><a href="/" title="Swift">They call me Swift.</a></h1>
           <nav class="span11">
             <ul class="gallery float-right">
               <li>
-                <a class="{% if page.title == 'Home' %} selected {% endif %} pill" href="/">Blog</a>
+                <a class="{% if page.title == 'Blog' or page.isPost %} selected {% endif %} pill" href="/">Blog</a>
               </li>
               <li>
                 <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
               </li>
               <li>
-                <a class="{% if page.title == 'Contact' %} selected {% endif %} pill" href="/contact.html">Contact</a>
+                <a class="pill" title="Follow me on Twitter" href="https://twitter.com/#!/SwiftAlphaOne">@SwiftAlphaOne</a>
               </li>
             </ul>
           </nav>
@@ -36,27 +37,8 @@
     </div>
     <footer id="page_footer">
       <div class="row">
-        <div class="span4">
-          <h5>Get Social.</h5>
-          <ul class="unstyled">
-            <li><a href="http://hackerleague.org/hackers/swift" title="My HackerLeague Profile">Hacker Profile</a></li>
-            <li><a href="http://www.github.com/theycallmeswift/" title="Swift's Github">Github</a></li>
-            <li><a href="http://stackoverflow.com/users/385913/mike-swift" title="Stack Overflow Profile">StackOverflow</a></li>
-            <li><a href="http://twitter.com/swiftalphaone" title="Follow me on Twitter">Twitter</a></li>
-          </ul>
-        </div>
-
-        <div class="span4">
-          <h5>Build stuff.</h5>
-          <ul class="unstyled">
-            <li><a href="http://www.crowdtap.com/" title="Crowdtap">Crowdtap</a></li>
-            <li><a href="http://www.hackerleague.org/" title="We Power Hackathons">Hacker League</a></li>
-            <li><a href="http://www.commentaddict.com/" title="CommentAddict">Comment Addict</a></li>
-          </ul>
-        </div>
-
-        <div class="span8 align-right">
-          <h5>2012 &copy; Mike Swift.</h5>
+        <div class="span16 align-right">
+          <p>2012 &copy; Swift.</p>
         </div>
       </div>
     </footer>

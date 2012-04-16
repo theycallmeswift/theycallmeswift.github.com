@@ -1,23 +1,22 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
-<section id="#blog" class="row">
-  <div class="posts span16">
-    <article class="solid box post">
-      <h3><a href="#blog">A Witty Post Title <small>And a subheading to go with it</small></a></h3>
-      <span class="date"><strong class="day">03</strong><em>/</em><strong class="month">Feb</strong><em>/</em><strong class="year">2012</strong></span>
-      <p>Cras pharetra sapien nec erat lacinia ut condimentum tortor malesuada. Curabitur hendrerit nibh at ipsum vulputate in placerat sem malesuada. Maecenas hendrerit, magna et auctor laoreet, turpis eros porta libero, in convallis elit erat quis erat. Sed scelerisque fringilla nulla sit amet tempus. Donec odio mi, malesuada lacinia molestie ornare, laoreet non tortor. Vestibulum vitae libero at purus egestas mollis in id nunc. Sed dapibus malesuada fringilla. Nunc quis sollicitudin arcu.</p>
-    </article>
-    <article class="solid box post">
-      <h3><a href="#blog">A Witty Post Title <small>And a subheading to go with it</small></a></h3>
-      <span class="date"><strong class="day">03</strong><em>/</em><strong class="month">Feb</strong><em>/</em><strong class="year">2012</strong></span>
-      <p>Cras pharetra sapien nec erat lacinia ut condimentum tortor malesuada. Curabitur hendrerit nibh at ipsum vulputate in placerat sem malesuada. Maecenas hendrerit, magna et auctor laoreet, turpis eros porta libero, in convallis elit erat quis erat. Sed scelerisque fringilla nulla sit amet tempus. Donec odio mi, malesuada lacinia molestie ornare, laoreet non tortor. Vestibulum vitae libero at purus egestas mollis in id nunc. Sed dapibus malesuada fringilla. Nunc quis sollicitudin arcu.</p>
-    </article>
-    <article class="solid box post">
-      <h3><a href="#blog">A Witty Post Title <small>And a subheading to go with it</small></a></h3>
-      <span class="date"><strong class="day">03</strong><em>/</em><strong class="month">Feb</strong><em>/</em><strong class="year">2012</strong></span>
-      <p>Cras pharetra sapien nec erat lacinia ut condimentum tortor malesuada. Curabitur hendrerit nibh at ipsum vulputate in placerat sem malesuada. Maecenas hendrerit, magna et auctor laoreet, turpis eros porta libero, in convallis elit erat quis erat. Sed scelerisque fringilla nulla sit amet tempus. Donec odio mi, malesuada lacinia molestie ornare, laoreet non tortor. Vestibulum vitae libero at purus egestas mollis in id nunc. Sed dapibus malesuada fringilla. Nunc quis sollicitudin arcu.</p>
-    </article>
+<section id="blog" class="row">
+  <div class="span16">
+    {% for post in site.posts %}
+    <h4 class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <small>{{ post.date | date_to_long_string }}</small></h4>
+    {% endfor %}
+  </div>
+</section>
+<section class="row post">
+  <div class="span16">
+    <h3 class="meta">Share & Follow</h3>
+  </div>
+  <div class="span2">
+    <a href="https://twitter.com/#!/SwiftAlphaOne" title="Swift"><img src='http://www.gravatar.com/avatar/10831877bd394c902f1dda20524c86d6' class='gravatar inline' /></a>
+  </div>
+  <div class="span14 share">
+    <p>Hey there! My name is Mike, but you can call me Swift.  I like to think of myself as a "Middle-end" developer.  I dabble in frontend, I dabble in backend, but the part I'm really good at is connecting the dots. A problem solver, if you will. Right now I'm a developer evangelist for this awesome outfit called <a href="http://sendgrid.com" title="SendGrid">SendGrid</a> and I'm also one of the founders of <a href="http://hackerleague.org/" title="Hacker League">Hacker League</a>. You can read my story <a href="/about.html" title="About Swift">here</a> and follow me on <a href="https://twitter.com/#!/SwiftAlphaOne" title="Follow me on Twitter">Twitter</a> for updates.</p>
   </div>
 </section>

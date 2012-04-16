@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+hr {
+  background-color: #ccc;
+}
+
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -41,8 +45,13 @@ html, body {
 }
 
 #page_header h1 {
-  font-family: 'La Belle Aurore', cursive;
   margin: 24px 0 14px 0;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+#page_header h1 a {
+  color: #1D242A;
+  text-decoration: none;
   word-spacing: -12px;
 }
 
@@ -50,72 +59,29 @@ html, body {
   padding-top: 42px;
 }
 
-#page_footer {
-  background-color: #343434;
-}
-
-#page_footer h5 {
-  color: #EDEEE9;
-}
-
-#page_footer li a, #page_footer li a:visited {
-  color: #769039;
-}
-
-#page_footer li a:hover {
-  color: #EDEEE9;
-}
-
-.post {
-  position: relative;
-}
-
-.post h3 a, .post h3 a:visited {
+.post-title a, .post-title a:visited {
   color: #343434;
   text-decoration: none;
 }
 
-.post h3 a:hover {
+.post-title a:hover {
   text-decoration: underline;
 }
 
-.post .date {
-  color: #769039;
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6{
+  border-bottom: 1px solid #CCC;
+}
+
+.post .share p {
+  margin-top: 0px;
+}
+
+.highlight {
+  font-family: monospace, Monaco, serif !important;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.highlight pre, .highlight code {
   display: block;
-  height: 39px;
-  position: absolute;
-  right: 24px;
-  top: 16px;
-  width: 85px;
-}
-
-.post .date em {
-  display: none;
-}
-
-.post .date .day {
-  bottom: 0;
-  font-size: 40px;
-  font-weight: bold;
-  left: 0;
-  line-height: 40px;
-  position: absolute;
-}
-
-.post .date .month {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 26px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.post .date .year {
-  bottom: 0;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 14px;
-  position: absolute;
-  right: 0;
 }
