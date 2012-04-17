@@ -56,8 +56,16 @@ td {
   padding: 4px;
 }
 
-.image-frame {
+.image-frame.center {
   text-align: center;
+}
+
+.image-frame img.right {
+  float: right;
+}
+
+.image-frame img.left{
+  float: left;
 }
 
 .image-frame img {

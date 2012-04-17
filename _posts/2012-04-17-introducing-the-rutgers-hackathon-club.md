@@ -20,6 +20,11 @@ In preparation for the second annual HackRU (which is coming up this weekend and
 already), here's a brief overview of some of our hacking accomplishments at 
 Rutgers.
 
+<div class="image-frame center">
+  <img src="http://farm7.staticflickr.com/6239/6890111158_06165efb61.jpg"
+alt="Some Rutgers hackers" />
+</div>
+
 ### A growing force
 
 I founded the Rutgers Hackathon Club back in 2010 after I'd attended my first
@@ -79,12 +84,18 @@ hundreds.
 
 ### The Sampler Platter
 
-Not all those projects we've produced were winners, but thanks to a 
+Of course not every project was a winner, but thanks to a 
 combination of [the Hacker League listings](http://www.hackerleague.org/hackathons),
 some old tweets, and a few quick Google searches, I've managed to compile a list of some of
 the award winning hacks that Rutgers students have produced over the years.
 It's a shame that it's not more complete, but regardless I think you'll find
 what's here entertaining, impressive, and definitely worth a read.
+
+<div class="image-frame">
+  <a href="http://rooster.am/">
+    <img src="http://pinkyurl.com/i?url=http%3A%2F%2Frooster.am%2F&out-format=png&resize=250" alt="Rooster.Am" class="right" />
+  </a>
+</div>
 
 ##### HackNY
 
@@ -96,6 +107,12 @@ what's here entertaining, impressive, and definitely worth a read.
 
 ##### PennApps
 
+<div class="image-frame">
+  <a href="http://socialpivot.jit.su/">
+    <img src="http://pinkyurl.com/i?url=http%3A%2F%2Fsocialpivot.jit.su%2F&out-format=png&resize=250" alt="Social Pivot" class="right" />
+  </a>
+</div>
+
  - [SlamWhale](http://www.slamwhale.com/) by Devon Peticolas, Andrew Jaeger, Bilal Quadri
  - [Commit Logs from Last Night](http://www.commitlogsfromlastnight.com/) by Abe Stanway
  - [GarageSlam](http://hackerleague.org/hackathons/penn-apps-2012-spring/hacks/garageslam) by Andrew Jaeger
@@ -105,11 +122,19 @@ what's here entertaining, impressive, and definitely worth a read.
 
  - [Cheatrr](http://ilovethepersonals.com/cheatrr/) by Abe Stanway
 
+
+##### Photo Hack Day
+
+<div class="image-frame">
+  <a href="http://www.slamwhale.com/">
+    <img src="http://pinkyurl.com/i?url=http%3A%2F%2Fwww.slamwhale.com%2F&out-format=png&resize=250" alt="Slam Whale" class="right" />
+  </a>
+</div>
+
+ - [HoneyBadger](http://abe.is/a/honeybadger/) by Abe Stanway
+
 ##### Hack Princeton
 
  - [Social Pivot](http://hackerleague.org/hackathons/hack-princeton/hacks/social-pivot) by Devon Peticolas, Andrew Jaeger
  - [NowTutorMe](http://hackerleague.org/hackathons/hack-princeton/hacks/nowtutorme) by Koushik Dasika
 
-##### Photo Hack Day
-
- - [HoneyBadger](http://abe.is/a/honeybadger/) by Abe Stanway
