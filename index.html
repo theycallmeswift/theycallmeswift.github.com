@@ -2,8 +2,9 @@
 layout: default
 title: Blog
 ---
-<section id="blog" class="row">
+<section id="blog" class="row post">
   <div class="span16">
+    <h3>Recent Posts</h3>
     {% for post in site.posts %}
     <h4 class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <small>{{ post.date | date_to_long_string }}</small></h4>
     {% endfor %}

@@ -2,8 +2,20 @@ html, body {
   height: 100%;
 }
 
+a {
+  color: #44949f;
+}
+
+a:hover {
+  color: #e64e74;
+}
+
 hr {
   background-color: #ccc;
+}
+
+td {
+  vertical-align: top;
 }
 
 .wrapper {
@@ -44,6 +56,23 @@ hr {
   padding: 4px;
 }
 
+.image-frame {
+  text-align: center;
+}
+
+.image-frame img {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #DDD;
+  border-image: initial;
+  display: inline;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 4px;
+}
+
 #page_header h1 {
   margin: 24px 0 14px 0;
   font-family: 'La Belle Aurore', cursive;
@@ -60,7 +89,7 @@ hr {
 }
 
 .post-title a, .post-title a:visited {
-  color: #343434;
+  color: #44949f;
   text-decoration: none;
 }
 
@@ -68,7 +97,7 @@ hr {
   text-decoration: underline;
 }
 
-.post h1, .post h2, .post h3, .post h4, .post h5, .post h6{
+.post h1, .post h2, .post h3 {
   border-bottom: 1px solid #CCC;
 }
 
