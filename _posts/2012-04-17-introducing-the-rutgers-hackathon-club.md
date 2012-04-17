@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Introducing the Rutgers Hackathon Club
 ---
 
 _TLDR; With the second iteration of [HackRU](http://hackerleague.org/hackathons/hackru)
