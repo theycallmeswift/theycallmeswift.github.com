@@ -60,6 +60,17 @@ td {
   text-align: center;
 }
 
+.image-frame.right {
+  text-align: right;
+  float: right;
+  margin-left: 20px;
+}
+
+.image-frame.right img {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
 .image-frame img.right {
   float: right;
 }
