@@ -22,9 +22,10 @@ Things are going exactly to plan. The app scaled and you've gained instant
 celebrity status over night.  Everything is awesome right?  __Wrong.__  Nobody's
 clicking through on all the emails you've been sending.
 
-Somewhere along the line, your emails got black-listed and your they're ending up
-in your new users' spam folders, not their inboxes.  So, what do you do? Well,
-with a little Node.js magic and some help from
+Somewhere along the line, [your emails got
+black-listed](http://www.slideshare.net/nextemarketing/sendgrid-deliverability-guide)
+and your they're ending up in your new users' spam folders, not their inboxes.
+So, what do you do? Well, with a little Node.js magic and some help from
 [SendGrid](http://sendgrid.com), we'll have you back up and running in no
 time.
 
@@ -37,9 +38,9 @@ Otherwise, you're going to need to sign up for one of the [more advanced
 packages](http://sendgrid.com/pricing.html) based on your monthly email
 volume.
 
-Once you get all the required stuff filled out, it'll probably take a few
-minutes for your actual account to get provisioned.  In the mean time, let's
-start writing some code!
+Once you get all the required stuff filled out and fill in your email settings, 
+it'll probably take a few minutes for your actual account to get provisioned.
+In the mean time, let's start writing some code!
 
 ## Tools of the trade
 
