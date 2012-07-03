@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+p {
+  line-height: 27px;
+}
+
 a {
   color: #44949f;
 }
