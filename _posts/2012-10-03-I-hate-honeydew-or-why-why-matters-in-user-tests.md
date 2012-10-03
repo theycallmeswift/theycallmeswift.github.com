@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I hate Honeydew or: Why you should always ask \"why?\""
+title: "I hate Honeydew or: Why you should always ask &ldquo;why?&ldquo;"
 noH1: true
 ---
 
