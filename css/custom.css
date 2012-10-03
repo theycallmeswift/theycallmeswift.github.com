@@ -4,6 +4,7 @@ html, body {
 
 p {
   line-height: 27px;
+  word-spacing: 1px;
 }
 
 a {
