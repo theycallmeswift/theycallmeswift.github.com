@@ -6,7 +6,9 @@ isPost: true
 <section class="row">
   <div class="span16">
     <article class="solid post">
-      <h1 class="post-title">{{ page.title }} <small>{{ page.date | date_to_long_string }}</small></h1>
+      {% unless page.noH1 %}
+        <h1 class="post-title">{{ page.title }} <small>{{ page.date | date_to_long_string }}</small></h1>
+      {% endunless %}
       {{ content }}
     </article>
   </div>
