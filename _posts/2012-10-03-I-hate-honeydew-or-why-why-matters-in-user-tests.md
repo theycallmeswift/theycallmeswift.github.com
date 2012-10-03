@@ -38,3 +38,5 @@ This story is a great example of why you should always ask "why?" when you perfo
 customer validation.  Simply observing your users is never enough.  User actions can lie, even if they
 seem straight forward.  The only way to truly understand your users is to find out _why_ they made the
 choices they did.  So ask.
+
+_Comments can be found on [Hacker News](http://news.ycombinator.com/item?id=4609699)_
