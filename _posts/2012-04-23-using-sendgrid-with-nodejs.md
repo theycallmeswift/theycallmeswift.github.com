@@ -123,12 +123,6 @@ messages are making it to the inbox, not the spam folder.
 
 ## What if I get stuck?
 
-<div class="image-frame left">
-  <a href="http://sendgrid.com">
-  <img src="/img/sendgrid_logo.jpg" alt="Node Mailer on Github" class="span3" />
-  </a>
-</div>
-
 Despite this being a pretty simple process, it's understandable that you might
 get stuck somewhere along the way.  Luckily, there are a number of awesome
 resources at your disposal, and you should be able to get all your questions

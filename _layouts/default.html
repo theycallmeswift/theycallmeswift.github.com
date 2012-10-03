@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} :: They Call Me Swift</title>
     <meta name="author" content="{{ site.author.name }}" />
+
     <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/rawr/rawr.min.css">
+    <link rel="stylesheet" href="/css/foundation.min.css">
     <link rel="stylesheet" href="/css/pygments.css">
     <link rel="stylesheet" href="/css/custom.css">
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -24,29 +29,30 @@
     </script>
   </head>
   <body>
-    <div class="wrapper">
-      <header id="page_header">
-        <div class="row">
-          <h1 class="span5"><a href="/" title="Swift">They call me Swift.</a></h1>
-          <nav class="span11">
-            <ul class="gallery float-right">
-              <li>
-                <a class="{% if page.title == 'Blog' or page.isPost %} selected {% endif %} pill" href="/">Blog</a>
-              </li>
-              <li>
-                <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
-              </li>
-              <li>
-                <a class="pill" title="Follow me on Twitter" href="https://twitter.com/#!/SwiftAlphaOne">@SwiftAlphaOne</a>
-              </li>
-            </ul>
-          </nav>
+    <header id="page_header">
+      <div class="row">
+        <div class="five columns">
+          <h1><a href="/" title="Swift">They call me Swift.</a></h1>
         </div>
-      </header>
-      <div id="main">
+        <nav class="seven columns hide-for-small">
+          <ul>
+            <li>
+              <a class="{% if page.title == 'Blog' or page.isPost %} selected {% endif %} pill" href="/">Blog</a>
+            </li>
+            <li>
+              <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
+            </li>
+            <li>
+              <a class="pill" title="Follow me on Twitter" href="https://twitter.com/#!/SwiftAlphaOne">@SwiftAlphaOne</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="row" id="main">
+      <div class="twelve columns">
         {{ content }}
       </div>
-      <div class="push"></div>
     </div>
     <footer id="page_footer">
       <div class="row">

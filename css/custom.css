@@ -1,12 +1,3 @@
-html, body {
-  height: 100%;
-}
-
-p {
-  line-height: 27px;
-  word-spacing: 1px;
-}
-
 a {
   color: #44949f;
 }
@@ -15,32 +6,34 @@ a:hover {
   color: #e64e74;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 1.1em;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+h1 { font-size:32px; }
+h2 { font-size:28.8px; }
+h3 { font-size:25.6px; }
+h4 { font-size:22.4px; }
+h5 { font-size:19.2px; }
+h6 { font-size:16px; }
+
+code {
+  font-weight: normal;
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
 hr {
   background-color: #ccc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -15em;
-}
-
-.push {
-  height: 15em;
 }
 
 #page_header {
   border-top: 10px solid #343434;
   border-bottom: 1px dotted #CCC;
-}
-
-.box.solid {
-  background-color: #EDEEE9;
+  margin-bottom: 25px;
 }
 
 .pill:link.selected, .pill:visited.selected {
@@ -61,7 +54,15 @@ td {
   padding: 4px;
 }
 
-.image-frame.center {
+.th img {
+  display: inline-block;
+}
+
+.th {
+  margin-bottom: 25px;
+}
+
+.center {
   text-align: center;
 }
 
@@ -99,6 +100,7 @@ td {
 
 #page_header h1 {
   margin: 24px 0 14px 0;
+  font-size: 32px;
   font-family: 'La Belle Aurore', cursive;
 }
 
@@ -108,8 +110,35 @@ td {
   word-spacing: -12px;
 }
 
-#page_header ul.gallery.small {
-  padding-top: 42px;
+#page_header nav {
+  text-align: right;
+}
+
+#page_header nav ul {
+  display: block;
+  list-style: none;
+  margin: 24px 0;
+}
+
+#page_header nav ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 15px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: 16px;
+}
+
+#page_header nav ul li a {
+  color: #1D242A;
+  padding: 3px 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#page_header nav ul li a:hover, #page_header nav ul li a.selected {
+  background-color: #1D242A;
+  color: #fff;
 }
 
 .post-title a, .post-title a:visited {

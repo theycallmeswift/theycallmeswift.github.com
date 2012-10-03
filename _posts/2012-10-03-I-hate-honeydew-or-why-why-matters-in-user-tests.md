@@ -4,15 +4,17 @@ title: "I hate Honeydew or: Why you should always ask \"why?\""
 noH1: true
 ---
 
-<h1 class="post-title">I hate Honeydew <small>or: Why you should always ask "why"</small></h1>
+<h1 class="post-title">I hate Honeydew <small>or: Why you should always ask "why?" <em>(Oct 03, 2012)</em></small></h1>
 
 During breakfast today I was reminded of one of the most common pitfalls of user testing and
 customer validation.  I ordered this thing called "The Tutti Frutti Special", which is 
 essentially a sticky bun that's cut in half with an egg on one half and a bunch of fresh fruit 
 on the other.  For the unimaginative, here's a picture.
 
-<div class="image-frame center">
-  <img style="max-width: 500px;" src="/img/tutti-frutti.png" alt="The Tutti Frutti Special" />
+<div class="center">
+  <a class="th" href="/img/tutti-frutti.png">
+    <img src="/img/tutti-frutti-small.png" alt="The Tutti Frutti Special" />
+  </a>
 </div>
 
 I wasn't really all that hungry to begin with, but I managed to get the half with the egg down
