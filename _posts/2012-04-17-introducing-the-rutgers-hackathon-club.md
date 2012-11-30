@@ -94,7 +94,7 @@ what's here entertaining, impressive, and definitely worth a read.
 
 <div class="image-frame">
   <a href="http://rooster.am/">
-    <img src="http://pinkyurl.com/i?url=http%3A%2F%2Frooster.am%2F&out-format=png&resize=250" alt="Rooster.Am" class="right" />
+    <img src="https://s3.amazonaws.com/pinkyurl.com/bd5cf3e578a8dc7865786043679055adf53c4d87" alt="Rooster.Am" class="right" />
   </a>
 </div>
 
@@ -110,7 +110,7 @@ what's here entertaining, impressive, and definitely worth a read.
 
 <div class="image-frame">
   <a href="http://socialpivot.jit.su/">
-    <img src="http://pinkyurl.com/i?url=http%3A%2F%2Fsocialpivot.jit.su%2F&out-format=png&resize=250" alt="Social Pivot" class="right" />
+    <img src="/img/socialpivot.jpg" alt="Social Pivot" class="right" />
   </a>
 </div>
 
@@ -128,7 +128,7 @@ what's here entertaining, impressive, and definitely worth a read.
 
 <div class="image-frame">
   <a href="http://www.slamwhale.com/">
-    <img src="http://pinkyurl.com/i?url=http%3A%2F%2Fwww.slamwhale.com%2F&out-format=png&resize=250" alt="Slam Whale" class="right" />
+    <img src="/img/slamwhale.jpg" alt="Slam Whale" class="right" />
   </a>
 </div>
 
