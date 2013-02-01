@@ -44,13 +44,6 @@ In the mean time, let's start writing some code!
 
 ## Tools of the trade
 
-<div class="image-frame right">
-  <a href="https://github.com/marak/node_mailer">
-  <img src="http://pinkyurl.com/i?url=https%3A%2F%2Fgithub.com%2Fmarak%2Fnode_mailer&out-format=png&resize=250"
-alt="Node Mailer on Github" />
-  </a>
-</div>
-
 Luckily for us there are a number of packages that we can use to easily
 integrate with SendGrid.  If you're looking for a solid layer of abstraction
 between you and your SMTP settings, I recommend checking out the
@@ -67,7 +60,7 @@ So, lets start by installing node_mailer using [npm](http://npmjs.org/).
 Don't forget to update your package JSON to reflect this.
 
 {% highlight bash %}
-  $ npm install mailer
+$ npm install mailer
 {% endhighlight %}
 
 Once we have it installed, hooking it in to our existing app should be
@@ -80,39 +73,38 @@ over and over again in your app.
 ###### server.js
 
 {% highlight javascript %}
-  var email = require('mailer')
-    , settings = {
-        domain: "smtp.sendgrid.net",
-        host: "smtp.sendgrid.net",
-        port : 587,
-        authentication: "login",
-        username: "your_sendgrid_username",
-        password: "your_sendgrid_password",
-        to : "your_user@their.domain.com",
-        from : "you@yourdomain.com",
-        subject : "Hello from [Your App]!",
-        data: {
-          name: "Swift"
-        },
-        template: "./template.mustache"
-    };
+var email = require('mailer')
+  , settings = {
+      domain: "smtp.sendgrid.net",
+      host: "smtp.sendgrid.net",
+      port : 587,
+      authentication: "login",
+      username: "your_sendgrid_username",
+      password: "your_sendgrid_password",
+      to : "your_user@their.domain.com",
+      from : "you@yourdomain.com",
+      subject : "Hello from [Your App]!",
+      data: {
+        name: "Swift"
+      },
+      template: "./template.mustache"
+  };
 
-  email.send(settings, function(err, result) {
-      if(err) {
-        // An error occurred. Handle it
-      }
-      // Your message has been sent!
-  });
+email.send(settings, function(err, result) {
+    if(err) {
+      // An error occurred. Handle it
+    }
+    // Your message has been sent!
+});
 {% endhighlight %}
 
 
 ###### template.mustache
 
-<div class="highlight">
-  <pre><code class="django">
-    <span class="x"></span><span class="cp">&#x7b;&#x7b;</span><span class="nv">name</span><span class="cp">&#x7d;&#x7d;</span><span class="x">, I'm writing to tell you that you're awesome!</span>
-  </code></pre>
-</div>
+{% assign name = '{{ name }}' %}
+{% highlight django %}
+{{name}}, I'm writing to tell you that you're awesome!
+{% endhighlight %}
 
 _Note: If you don't want to use templates, you can omit the
 `template.mustache` file and replace the `template` attribute of your settings

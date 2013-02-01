@@ -3,30 +3,35 @@ layout: default
 isPost: true
 ---
 
-<section class="row">
-  <div class="span16">
-    <article class="solid post">
-      {% unless page.noH1 %}
-        <h1 class="post-title">{{ page.title }} <small>{{ page.date | date_to_long_string }}</small></h1>
-      {% endunless %}
-      {{ content }}
-    </article>
-  </div>
-</section>
-<section class="row post">
-  <div class="span16">
-    <h3 class="meta">Share & Follow</h3>
-  </div>
-  <div class="span2">
-    <a href="https://twitter.com/#!/SwiftAlphaOne" title="Swift"><img src='http://www.gravatar.com/avatar/10831877bd394c902f1dda20524c86d6' class='gravatar inline' /></a>
-  </div>
-  <div class="span14 share">
-    <p>Hey there! My name is Mike, but you can call me Swift.  I like to think of myself as a "Middle-end" developer.  I dabble in frontend, I dabble in backend, but the part I'm really good at is connecting the dots. A problem solver, if you will. Right now I'm a developer evangelist for this awesome outfit called <a href="http://sendgrid.com" title="SendGrid">SendGrid</a> and I'm also one of the founders of <a href="http://hackerleague.org/" title="Hacker League">Hacker League</a>. You can read my story <a href="/about.html" title="About Swift">here</a> and follow me on <a href="https://twitter.com/#!/SwiftAlphaOne" title="Follow me on Twitter">Twitter</a> for updates.</p>
-    <p>
-      <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="SwiftAlphaOne">Tweet</a>
-    </p>
-  </div>
-</section>
+<h1><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+
+<section class="byline">{{ page.date | date: "%B %e, %Y" }}</section>
+<div class="hide-for-mobile">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="SwiftAlphaOne">Tweet</a>
+  <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a>
+</div>
+<br />
+
+{{ content }}
+
+
+<p class="signature">
+  - <em>Swift</em>
+</p>
+
+<p class="ps">
+  <em>
+    P.S. My name is Swift.  I'm a developer evangelist at <a href="http://sendgrid.com">SendGrid</a> and 
+    one of the founders of <a href="http://hackerleague.org">Hacker League</a>.  I also tweet as
+    <a href="http://twitter.com/swiftalphaone">@SwiftAlphaOne</a>.  Follow me there for more lab notes and maybe
+    a laugh or two.
+  </em>
+</p>
+
+<p>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="SwiftAlphaOne">Tweet</a>
+  <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a>
+</p>
+
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script>(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="//hnbutton.appspot.com/static/hn.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>

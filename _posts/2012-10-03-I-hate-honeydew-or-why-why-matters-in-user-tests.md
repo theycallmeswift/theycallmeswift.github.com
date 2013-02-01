@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "I hate Honeydew or: Why you should always ask &ldquo;why?&ldquo;"
+title: "I hate Honeydew melon."
 noH1: true
 ---
-
-<h1 class="post-title">I hate Honeydew <small>or: Why you should always ask "why?" <em>(Oct 03, 2012)</em></small></h1>
 
 During breakfast today I was reminded of one of the most common pitfalls of user testing and
 customer validation.  I ordered this thing called "The Tutti Frutti Special", which is 

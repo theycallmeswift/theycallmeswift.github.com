@@ -2,9 +2,13 @@ auto: true
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
+rdiscount:
+  extensions: [smart]
 
-author:
-  name: Mike Swift
-  email: theycallmeswift@gmail.com
-  twitter: SwiftAlphaOne
-  github: theycallmeswift
+name: Swift
+url: http://theycallmeswift.com
+description: Lab notes and scribbles from a mad-scientist at play.
+email: swift@theycallmeswift.com
+twitter: SwiftAlphaOne
+github: theycallmeswift
+gravatar_url: http://www.gravatar.com/avatar/10831877bd394c902f1dda20524c86d6

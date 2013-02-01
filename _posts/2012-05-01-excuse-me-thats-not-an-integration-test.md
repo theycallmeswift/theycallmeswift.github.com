@@ -38,23 +38,23 @@ given a specific set of inputs / conditions.  Take this model spec for
 example:
 
 {% highlight coffeescript %}
-  describe "#isNew", ->
-    beforeEach ->
-      timestamp = (new Date("11/20/89")).getTime()
-      clock = Sinon.useFakeTimers(timestamp, "Date")
+describe "#isNew", ->
+  beforeEach ->
+    timestamp = (new Date("11/20/89")).getTime()
+    clock = Sinon.useFakeTimers(timestamp, "Date")
 
-      newMission = Mission.create({ created_at: "11/18/89" })
-      oldMission = Mission.create({ created_at: "11/01/89" })
+    newMission = Mission.create({ created_at: "11/18/89" })
+    oldMission = Mission.create({ created_at: "11/01/89" })
 
-    it "returns true if the mission was created less than a week ago", ->
-      expect(newMission.isNew()).toEqual(true)
+  it "returns true if the mission was created less than a week ago", ->
+    expect(newMission.isNew()).toEqual(true)
 
-    it "returns false if the mission was created over a week ago", ->
-      expect(oldMission.isNew()).toEqual(false)
+  it "returns false if the mission was created over a week ago", ->
+    expect(oldMission.isNew()).toEqual(false)
 
-    afterEach ->
-      clock.restore()
-      Mission.deleteAll()
+  afterEach ->
+    clock.restore()
+    Mission.deleteAll()
 
 {% endhighlight %}
 
@@ -99,22 +99,22 @@ this:
 ###### index.html
 
 {% highlight html %}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>App</title>
-      <link rel='stylesheet' href='/application.css' type='text/css'>
-      <script src="/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-      <script src="/application.js" type="text/javascript" charset="utf-8"></script>
-      <script type="text/javascript" charset="utf-8">
-        $(function(){
-          var MyApplication = require("my_application");
-          new MyApplication({ el: $("body") });
-        });
-      </script>
-    </head>
-    <body></body>
-  </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <link rel='stylesheet' href='/application.css' type='text/css'>
+    <script src="/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/application.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        var MyApplication = require("my_application");
+        new MyApplication({ el: $("body") });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
 {% endhighlight %}
 
 Pretty simple. You could literally open up `index.html` in any old web browser
@@ -127,22 +127,22 @@ node.js http server of choice.
 ###### world.coffee
 
 {% highlight coffeescript %}
-  Browser = require 'zombie' # our headless browser
-  nock    = require 'nock' # An awesome tool for stubbing out HTTP requests
+Browser = require 'zombie' # our headless browser
+nock    = require 'nock' # An awesome tool for stubbing out HTTP requests
 
-  # Swap this out with your HTTP server of choice
-  Hem = require 'hem'
-  App = new Hem
-  App.server()
+# Swap this out with your HTTP server of choice
+Hem = require 'hem'
+App = new Hem
+App.server()
 
-  class World
-    constructor: (callback) ->
-      @browser = new Browser()
-      @apiMock = nock("http://localhost")
-      callback(this)
+class World
+  constructor: (callback) ->
+    @browser = new Browser()
+    @apiMock = nock("http://localhost")
+    callback(this)
 
-    visit: (url, next) ->
-      @browser.visit url, next
+  visit: (url, next) ->
+    @browser.visit url, next
 
 {% endhighlight %}
 
@@ -152,24 +152,23 @@ for API mocking and actually visiting the web page.  Now let's say we wanted to
 write the following feature:
 
 {% highlight cucumber %}
-  Feature: Viewing awesome people
-    In order to figure out who is awesome
-    As a visitor
-    I want to see a list of awesome people
+Feature: Viewing awesome people
+  In order to figure out who is awesome
+  As a visitor
+  I want to see a list of awesome people
 
-    Background:
-      Given the API returns the following JSON response for the awesome people index:
-       """
-        [{ "name": "Swift" }]
-        """
+  Background:
+    Given the API returns the following JSON response for the awesome people index:
+     """
+      [{ "name": "Swift" }]
+      """
 
-    Scenario: Viewing the list
-      When I am on the home page
-      Then I should not see "Swift"
-      But I should see "Awesome people"
-      When I click "Awesome people"
-      Then I should see "Swift"
-
+  Scenario: Viewing the list
+    When I am on the home page
+    Then I should not see "Swift"
+    But I should see "Awesome people"
+    When I click "Awesome people"
+    Then I should see "Swift"
 {% endhighlight %}
 
 Pretty straight forward.  Now all we need are the step definitions to power it:
@@ -177,33 +176,32 @@ Pretty straight forward.  Now all we need are the step definitions to power it:
 ###### shared_steps.coffee
 
 {% highlight coffeescript %}
-  sharedSteps = module.exports = ->
-    @World = require("../support/world").World
+sharedSteps = module.exports = ->
+  @World = require("../support/world").World
 
-    @Given /^I am on the home page$/, (next) ->
-      @visit "/", next
+  @Given /^I am on the home page$/, (next) ->
+    @visit "/", next
 
-    @Given /^the API returns the following JSON response for ([^:]+):$/, (pathMatcher, jsonString, next) ->
-      # We have a set of path selectors that map to API endpoints
-      path = @pathFor(pathMatcher)
-      @apiMock.get(path).reply(200, JSON.parse(jsonString))
-      next()
+  @Given /^the API returns the following JSON response for ([^:]+):$/, (pathMatcher, jsonString, next) ->
+    # We have a set of path selectors that map to API endpoints
+    path = @pathFor(pathMatcher)
+    @apiMock.get(path).reply(200, JSON.parse(jsonString))
+    next()
 
-    @When /^I click "([^"]*)"$/, (link, next) ->
-      @browser.clickLink link, next
+  @When /^I click "([^"]*)"$/, (link, next) ->
+    @browser.clickLink link, next
 
-    @Then /^I should (not )?see (.+)$/, (negation, namedElement, next) ->
-      # We have a set of named elements that map to jQuery selectors
-      selector = @selectorFor(namedElement)
-      element = @browser.queryAll(selector)
+  @Then /^I should (not )?see (.+)$/, (negation, namedElement, next) ->
+    # We have a set of named elements that map to jQuery selectors
+    selector = @selectorFor(namedElement)
+    element = @browser.queryAll(selector)
 
-      if negation
-        element.length.should.eql 0, "Number of elements with selector #{selector}"
-      else
-        element.length.should.eql 1, "Number of elements with selector #{selector}"
+    if negation
+      element.length.should.eql 0, "Number of elements with selector #{selector}"
+    else
+      element.length.should.eql 1, "Number of elements with selector #{selector}"
 
-      next()
-
+    next()
 {% endhighlight %}
 
 With these four step definitions, we can effectivly recreate any enviornment

@@ -6,16 +6,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{{ page.title }} :: They Call Me Swift</title>
-    <meta name="author" content="{{ site.author.name }}" />
 
-    <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/foundation.min.css">
-    <link rel="stylesheet" href="/css/pygments.css">
-    <link rel="stylesheet" href="/css/custom.css">
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}" />
 
+    <link rel="alternate" type="application/rss+xml" href="/feed/rss.xml" />
+
+    <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+    <link media="only screen and (max-device-width: 480px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
+    <link media="only screen and (device-width: 768px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="content">
+      <header>
+        <a href="{{ site.url }}" title="They Call Me Swift"><img class="logo" src="/img/logo.png" /></a>
+        <div class="icons">
+          <a href="http://twitter.com/swiftalphaone"><img src="/img/twitter.png" /></a>
+          <a href="http://github.com/theycallmeswift"><img src="/img/github.png" /></a>
+          <a href="{{ site.url }}/feed/rss.xml"><img src="/img/rss.png" /></a>
+        </div>
+      </header>
+      {{ content }}
+    </section>
+
+    <script src="/js/app.js"></script>
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-30969842-1']);
       _gaq.push(['_setDomainName', 'theycallmeswift.com']);
@@ -27,39 +49,5 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
     </script>
-  </head>
-  <body>
-    <header id="page_header">
-      <div class="row">
-        <div class="five columns">
-          <h1><a href="/" title="Swift">They call me Swift.</a></h1>
-        </div>
-        <nav class="seven columns hide-for-small">
-          <ul>
-            <li>
-              <a class="{% if page.title == 'Blog' or page.isPost %} selected {% endif %} pill" href="/">Blog</a>
-            </li>
-            <li>
-              <a class="{% if page.title == 'About' %} selected {% endif %} pill" href="/about.html">About</a>
-            </li>
-            <li>
-              <a class="pill" title="Follow me on Twitter" href="https://twitter.com/#!/SwiftAlphaOne">@SwiftAlphaOne</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="row" id="main">
-      <div class="twelve columns">
-        {{ content }}
-      </div>
-    </div>
-    <footer id="page_footer">
-      <div class="row">
-        <div class="span16 align-right">
-          <p>2012 &copy; Swift.</p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

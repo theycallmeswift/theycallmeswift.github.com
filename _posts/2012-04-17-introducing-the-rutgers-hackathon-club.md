@@ -36,7 +36,7 @@ members to 45 and attended at least as many events together:
 
 <table>
   <thead>
-    <tr><td colspan="3">Some of the hackathons we've attended</td></tr>
+    <tr><td colspan="2">Some of the hackathons we've attended</td></tr>
   </thead>
   <tr>
     <td>
@@ -49,18 +49,9 @@ members to 45 and attended at least as many events together:
         <li>Geeklist</li>
         <li>Node Knockout</li>
         <li>Techcrunch Disrupt</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
         <li>Google Games</li>
         <li>Code Sprint (x2)</li>
         <li>New York Times (x2)</li>
-        <li>Startup Weekend (x4)</li>
-        <li>DevFest</li>
-        <li>Photo Hack Day</li>
-        <li>Art Hack Day</li>
-        <li>Foursquare (x2)</li>
       </ul>
     </td>
     <td>
@@ -72,6 +63,11 @@ members to 45 and attended at least as many events together:
         <li>Lean Startup Machine</li>
         <li>Hacker Olympics</li>
         <li>Hack Princeton</li>
+        <li>DevFest</li>
+        <li>Photo Hack Day</li>
+        <li>Art Hack Day</li>
+        <li>Foursquare (x2)</li>
+        <li>Startup Weekend (x4)</li>
       </ul>
     </td>
   </tr>
@@ -92,13 +88,7 @@ the award winning hacks that Rutgers students have produced over the years.
 It's a shame that it's not more complete, but regardless I think you'll find
 what's here entertaining, impressive, and definitely worth a read.
 
-<div class="image-frame">
-  <a href="http://rooster.am/">
-    <img src="https://s3.amazonaws.com/pinkyurl.com/bd5cf3e578a8dc7865786043679055adf53c4d87" alt="Rooster.Am" class="right" />
-  </a>
-</div>
-
-##### HackNY
+#### HackNY
 
  - [Foursquare Candidates](http://ianjennings.carbonmade.com/projects/2934118) by Ian Jennings, Hrishikesh Bakshi
  - [Rooster.am](http://rooster.am/) by Ian Jennings
@@ -106,36 +96,22 @@ what's here entertaining, impressive, and definitely worth a read.
  - [AdRunner](http://hackerleague.org/hackathons/hackny-fall-2011/hacks/adrunner) by Joey Dong
  - [cLoudspeaker](http://hackerleague.org/hackathons/spring-2012-hackny-student-hackathon/hacks/cloudspeaker) by Kaushal Parikh
 
-##### PennApps
-
-<div class="image-frame">
-  <a href="http://socialpivot.jit.su/">
-    <img src="/img/socialpivot.jpg" alt="Social Pivot" class="right" />
-  </a>
-</div>
+#### PennApps
 
  - [SlamWhale](http://www.slamwhale.com/) by Devon Peticolas, Andrew Jaeger, Bilal Quadri
  - [Commit Logs from Last Night](http://www.commitlogsfromlastnight.com/) by Abe Stanway
  - [GarageSlam](http://hackerleague.org/hackathons/penn-apps-2012-spring/hacks/garageslam) by Andrew Jaeger
  - [Easy Mood](http://hackerleague.org/hackathons/penn-apps-2012-spring/hacks/easy-mood) by Jesse Huang, John Maltz, Koushik Dasika, Lara Martin
 
-##### HackRU
+#### HackRU
 
  - [Cheatrr](http://ilovethepersonals.com/cheatrr/) by Abe Stanway
 
-
-##### Photo Hack Day
-
-<div class="image-frame">
-  <a href="http://www.slamwhale.com/">
-    <img src="/img/slamwhale.jpg" alt="Slam Whale" class="right" />
-  </a>
-</div>
+#### Photo Hack Day
 
  - [HoneyBadger](http://abe.is/a/honeybadger/) by Abe Stanway
 
-##### Hack Princeton
+#### Hack Princeton
 
  - [Social Pivot](http://hackerleague.org/hackathons/hack-princeton/hacks/social-pivot) by Devon Peticolas, Andrew Jaeger
  - [NowTutorMe](http://hackerleague.org/hackathons/hack-princeton/hacks/nowtutorme) by Koushik Dasika
-
