@@ -245,3 +245,19 @@ a {
 .content .talk-design .color .white {
   color: #fff;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .content {
+    margin: 0;
+    padding: 5px 25px;
+    width: inherit;
+  }
+
+  .content h1 {
+    margin: 0 0 5px 0;
+  }
+
+  .hide-for-mobile {
+    display:  none;
+  }
+}

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "I hate Honeydew melon."
-noH1: true
 ---
 
 During breakfast today I was reminded of one of the most common pitfalls of user testing and
@@ -9,11 +8,9 @@ customer validation.  I ordered this thing called "The Tutti Frutti Special", wh
 essentially a sticky bun that's cut in half with an egg on one half and a bunch of fresh fruit 
 on the other.  For the unimaginative, here's a picture.
 
-<div class="center">
-  <a class="th" href="/img/tutti-frutti.png">
-    <img src="/img/tutti-frutti-small.png" alt="The Tutti Frutti Special" />
-  </a>
-</div>
+<a class="th" href="/img/tutti-frutti.png">
+  <img src="/img/tutti-frutti-small.png" alt="The Tutti Frutti Special" />
+</a>
 
 I wasn't really all that hungry to begin with, but I managed to get the half with the egg down
 and picked at the other half until my fullness got the best of me and I gave up.  Eventually,
