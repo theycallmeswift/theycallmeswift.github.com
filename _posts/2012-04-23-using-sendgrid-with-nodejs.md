@@ -3,9 +3,9 @@ layout: post
 title: Using SendGrid with Node.js
 ---
 
-_TLDR; If you want to send email with your Node.js app, it's super easy to get
-set up with [SendGrid](http://sendgrid.com/) via SMTP using
-[node_mailer](https://github.com/marak/node_mailer)._
+_**WARNING**; Since this post was written, better ways to use SendGrid with
+node.js have come out.  Check out the [official SendGrid
+package](http://github.com/sendgrid/sendgrid-nodejs) for details._
 
 ## Okay, so here's the scenario
 
