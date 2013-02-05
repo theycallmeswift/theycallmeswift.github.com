@@ -4,7 +4,8 @@ title: "The elements of a great API demo."
 ---
 
 My current demo is something that I'm particularly proud of.  If you haven't
-seen it already, here's a decent recording of it from PennApps.
+seen it already, here's a decent recording of it from
+[PennApps](https://www.hackerleague.org/hackathons/pennapps-spring-2013).
 
 <iframe class="youtube" src="http://www.youtube.com/embed/-5gZ4FwL-ro" frameborder="0" allowfullscreen></iframe>
 
