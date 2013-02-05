@@ -6,8 +6,7 @@ title: "The elements of a great API demo."
 My current demo is something that I'm particularly proud of.  If you haven't
 seen it already, here's a decent recording of it from PennApps.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/-5gZ4FwL-ro"
-frameborder="0" allowfullscreen></iframe>
+<iframe class="youtube" src="http://www.youtube.com/embed/-5gZ4FwL-ro" frameborder="0" allowfullscreen></iframe>
 
 Even with the Tweetdeck mishap, the whole thing is streamlined down to a
 science.  And there's a reason for that.  The thing that people often don't

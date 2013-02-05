@@ -151,7 +151,7 @@ a {
   margin: 30px 0 45px;
 }
 
-.content > iframe {
+.content .fluid-width-video-wrapper {
   margin: 20px 0 30px;
 }
 

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.content').fitVids();
 
   $("div.highlight").each(function(){
     var contentwidth = $("code", this).width();
