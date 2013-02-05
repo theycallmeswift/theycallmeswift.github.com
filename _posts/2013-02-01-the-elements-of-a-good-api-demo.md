@@ -3,11 +3,6 @@ layout: post
 title: "The elements of a great API demo."
 ---
 
-Recently, I've been thinking about what it is that makes a great API demo.  Not
-a good API demo, *a great API demo*.  There's probably no 100% formula, but I've
-come up with some tips that will definitely get you going in the right
-direction.
-
 My current demo is something that I'm particularly proud of.  If you haven't
 seen it already, here's a decent recording of it from PennApps.
 
@@ -18,7 +13,8 @@ Even with the Tweetdeck mishap, the whole thing is streamlined down to a
 science.  And there's a reason for that.  The thing that people often don't
 realize is that this demo is the product of dozens of iterations.  I've been
 carefully optimizing it for a while now, trying to take full advantage of every
-precious second I get.  Which leads me to my first point.
+precious second I get.  Here are a couple of tips I've learned along the way
+that you can use to optimize your own demo.
 
 ## Know your audience.
 
@@ -41,7 +37,7 @@ marketers, the newsletter UI is the main focus of my talk.
 
 There's this common belief among developer evangelists that live coding
 is better than a slide deck during a demo.  I actually disagree even though
-you'll rarely catch me using slides.  You see, there's a right medium for
+you'll rarely catch me using slides.  There's a right medium for
 everyone.  I'm very comfortable in a console, so live coding works for me.  That
 said, I've seen a ton of great demos given from the browser and from a slide deck
 too.
@@ -56,9 +52,9 @@ And then compare it to this one:
 
 ![Good Slide](/img/good_slide.png)
 
-It's pretty obvious which one is better.  Slides don't *need* to be boring.
-They can be simple and fun.  You just have to go the extra mile and put some
-personality into them.
+They both have the same overall message, but it's pretty obvious which one is 
+better.  Slides don't *need* to be boring.  They can be simple and fun.  You 
+just have to go the extra mile and put some personality into them.
 
 ## Keep it simple.
 
@@ -100,7 +96,8 @@ Here are a few things you can do to help avoid problems from the start:
  - Check that the internet is working
  - Make sure you shut down Tweetdeck, IRC, GChat, etc.
  - Run through your demo to make sure it works
- - Have backup slides and be ready to talk without anything
+ - Have backup slides prepared
+ - Be ready to talk without your computer
 
 ## Practice & Iterate.
 
