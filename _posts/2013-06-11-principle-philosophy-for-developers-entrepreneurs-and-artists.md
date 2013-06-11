@@ -565,3 +565,5 @@ programmer, entrepreneur, artist, or whatever you may be.
 
 *Special thanks to the [Noun Project](http://thenounproject.com/)
 for all the awesome images.  You guys rock.*
+
+*Comments and discussion on [Hacker News](https://news.ycombinator.com/item?id=5862159)*.
