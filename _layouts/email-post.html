@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<h1><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+
+<section class="byline">{{ page.date | date: "%B %e, %Y" }}</section>
+<div class="hide-for-mobile">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="SwiftAlphaOne">Tweet</a>
+  <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a>
+</div>
+<br />
+
+{{ content }}
+
+<form class="signup-form">
+  <input type="email" name="email" id="email" placeholder="Enter your email..." />
+  <input type="submit" name="go" class="btn" id="go" value="Join Me!" />
+</form>
+
+<p class="signature">
+  - <em>Swift</em>
+</p>
+
+<p class="ps">
+  <em>
+    P.S. My name is Swift.  I'm a developer evangelist at <a href="http://sendgrid.com">SendGrid</a> and 
+    one of the founders of <a href="http://hackerleague.org">Hacker League</a>.  I also tweet as
+    <a href="http://twitter.com/swiftalphaone">@SwiftAlphaOne</a>.  Follow me there for more of my thoughts and maybe
+    a laugh or two.
+  </em>
+</p>
+
+<p>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="SwiftAlphaOne">Tweet</a>
+  <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a>
+</p>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="//hnbutton.appspot.com/static/hn.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+<script src="/js/jquery.fitvids.min.js"></script>
