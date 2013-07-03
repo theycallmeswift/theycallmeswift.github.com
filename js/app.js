@@ -13,16 +13,5 @@ $(document).ready(function() {
     }
   });
 
-  $('.signup-form .btn').click(function(e) {
-    e.preventDefault();
-    var url = "http://nameless-chamber-5311.herokuapp.com/email"
-      , email = $('.signup-form #email').val();
-
-    if(email) {
-      $.post(url, { email: email }).done(function(data) {
-        $('.signup-form').html("<h3>Thanks for signing up!</h3>");
-      });
-    }
-  });
 
 });
