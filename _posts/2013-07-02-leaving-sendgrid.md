@@ -13,7 +13,7 @@ support.
 There are two questions that people tend to ask me when I tell them that I'm
 moving on from SendGrid, *"Why are you leaving?"* and *"What are you going
 to do next?"*. In this post, I'm going to focus on the former and save the
-later for another time.
+latter for another time.
 
 The things that makes evangelism so awesome are the "magic moments" that you
 get to share with the people you meet.  The excitement in a hacker's eyes
