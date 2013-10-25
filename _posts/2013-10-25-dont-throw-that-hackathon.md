@@ -14,7 +14,7 @@ Let me start by saying, "I love hackathons."  If you've ever met me before,
 that's probably not a huge surprise.  Over the last few years, I've literally
 been to hundreds of them and played every role from hacker to organizer and
 back.  I've also founded a couple of hackathon related companies (more on
-those later) and I've been known to write about hackathon occasionally too.
+those later) and I've been known to write about hackathons occasionally too.
 These are some observations I've made along the way.
 
 ![They Call Me Swift](/img/dont-throw-that-hackathon/page0002.jpg)
@@ -69,7 +69,7 @@ certainly something worth investigating here.
 
 ![3 Main Reasons](/img/dont-throw-that-hackathon/page0007.jpg)
 
-Broadly speaking, I've broken the reasons that companies get involved in
+Broadly speaking, I've broken down the reasons that companies get involved in
 hackathons into three big categories.  Now, you can certainly fall into more
 than one of these buckets, but I think there's always one strategy that
 dominates the others.  And each of these buckets has its own *optimal*
@@ -257,7 +257,7 @@ These are some of the more successful examples that I could think of.  I bet
 if you just researched startups that were working on problems that you're
 interested in solving that you would find a ton that could use your
 support.  Help the existing folks before you start trying to onboard new 
-people to compete with them
+people to compete with them.
 
 ![Meet Community](/img/dont-throw-that-hackathon/page0031.jpg)
 
@@ -311,7 +311,7 @@ example of a successful hackathon that popped up in an underserved market.
 ![Geography](/img/dont-throw-that-hackathon/page0036.jpg)
 
 Here's another protip: New York, San Francisco, and Boston are completely
-saturated with good events.  It's also really hard to compete with the one's that
+saturated with good events.  It's also really hard to compete with the ones that
 have already established a name for themselves.  In general, unless you have
 a really good reason and a bulletproof marketing strategy, I would steer
 clear.
@@ -343,4 +343,4 @@ you're going to throw your own, make sure it really meets the goals that
 you're trying to accomplish.
 
 You can find me on Twitter at [@SwiftAlphaOne](https://twitter.com/swiftalphaone).
-I'd love to hear your thought on the subject.  Thanks for having me!
+I'd love to hear your thoughts on the subject.  Thanks for having me!
