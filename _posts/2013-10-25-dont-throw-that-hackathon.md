@@ -51,7 +51,7 @@ of developers up into the thousands of attendees.
 ![On the Rise](/img/dont-throw-that-hackathon/page0005.jpg)
 
 This is a graph of the events that my startup, [Hacker League](https://www.hackerleague.org/),
-has powered since we came out of beta in January.  As you can see, the number
+has powered since we launched in October 2011.  As you can see, the number
 of hackathons that are happening every month is going up at a pretty spectacular
 rate.
 
