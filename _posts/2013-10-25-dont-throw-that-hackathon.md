@@ -274,7 +274,7 @@ more interested in socializing and hanging out with other smart people than
 building something new.  Just providing a good atmosphere for people to network
 and have fun is actually way more on target than forcing a hackathon on them
 as a second thought.  The hackathon ends up being a distraction and a
-non-priority and ultimately isn't as good as it could be as a serrate event.
+non-priority and ultimately isn't as good as it could be as a separate event.
 
 ![Meet Community: Alternative](/img/dont-throw-that-hackathon/page0033.jpg)
 
