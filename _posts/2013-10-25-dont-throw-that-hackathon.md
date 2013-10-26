@@ -183,8 +183,8 @@ Seriously though, don't do it.  I know it sounds counter-intuitive: if we get
 all these benefits out of being around hackathons, why not just throw our own
 and make the developers come to us?  Well here's the protip: The reasons that
 your company does hackathons and the reasons that developers do hackathons are
-fundamentally different.  There's a very small subset of developer who wants
-to be marketed to and recruited, and usually that subset isn't the one you're
+fundamentally different.  There's a very small subset of developer whom want
+to be marketed to and recruited, and usually, that subset isn't the one you're
 trying to hit.
 
 ![The killer question](/img/dont-throw-that-hackathon/page0024.jpg)
