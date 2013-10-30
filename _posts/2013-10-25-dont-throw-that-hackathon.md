@@ -131,7 +131,7 @@ before.
 
 The other marketing sub-category is companies that want to work on their
 perception.  Generally speaking, these are larger or older companies that
-aren't *trendy and cool* luck the young, agile companies that dominate this
+aren't *trendy and cool* like the young, agile companies that dominate this
 market place.  The want to put their logos on as much cool stuff as possible
 so developers don't discount them when they're making decisions.
 
@@ -172,9 +172,12 @@ in hackathons, you have a leg up on the rest of the field.  Most companies
 don't realize that each of those goals has its own optimal strategy to
 accompany it.  They see either the peers or their competitors at these events
 and want to reap the same benefits.  So they jump into it head first without
-doing any research and disasters ensue.
+doing any research and disasters ensue.  If you're interested in reading
+about some successful, real-world examples of these strategies, I would check
+out [this article called "Forketing"](https://medium.com/on-startups/1feed0155749)
+on Medium.
 
-So here's the first big mistake they make:  they decide that they want to
+So here's the first big mistake that companies make:  they decide that they want to
 throw *their own* hackathon.
 
 ![Don't throw that Hackathon](/img/dont-throw-that-hackathon/page0023.jpg)
