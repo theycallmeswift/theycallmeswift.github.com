@@ -308,7 +308,7 @@ action is the work that SendGrid, Twilio, Mashery, and TokBox do with API
 Hackday.  They throw hackathons all over the world in cities that don't
 necessarily have a lot of events.  Sometimes they'll do it a few days before a
 conference or something to help boost attendance, but for the most part
-they're independent hackathons.  Also, Hack the Midwest is another good
+they're independent hackathons.  Also, [Hack the Midwest](http://hackthemidwest.com/) is another good
 example of a successful hackathon that popped up in an underserved market.
 
 ![Geography](/img/dont-throw-that-hackathon/page0036.jpg)
